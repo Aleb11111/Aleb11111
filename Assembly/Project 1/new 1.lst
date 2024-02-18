@@ -1,0 +1,65 @@
+     1                                  bits 32 
+     2                                  ; assembling for the 32 bits architecture
+     3                                  
+     4                                  ; Write a program in the assembly language that computes the following arithmetic expression, considering the following data types for the variables:
+     5                                  ; a - byte, b - word
+     6                                  ; (b / a * 2 + 10) * b - b * 15;
+     7                                  ; ex. 1: a = 10; b = 40; Result: (40 / 10 * 2 + 10) * 40 - 40 * 15 = 18 * 40 - 1600 = 720 - 600 = 120
+     8                                  ; ex. 2: a = 100; b = 50; Result: (50 / 100 * 2 + 10) * 50 - 50 * 15 = 12 * 50 - 750 = 600 - 750 = - 150
+     9                                  
+    10                                  
+    11                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+    12                                  global start        
+    13                                  
+    14                                  ; declare external functions needed by our program
+    15                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+    16                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+    17                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    18                                  
+    19                                  ; our data is declared here (the variables needed by our program)
+    20                                  segment data use32 class=data
+    21                                      ; ...
+    22 00000000 0A                          a db 10
+    23 00000001 2800                        b dw 40
+    24                                  
+    25                                  ; our code starts here
+    26                                  segment code use32 class=code
+    27                                      start:
+    28                                          ; ...
+    29                                          ;(b / a * 2 + 10) * b - b * 15;
+    30                                          
+    31                                          ;b/a
+    32 00000000 66A1[01000000]                  mov AX, [b]
+    33 00000006 F635[00000000]                  div byte [a] ;AX/a=b/a=AL       AX%a=AH
+    34                                          ;b/a*2
+    35 0000000C B302                            mov BL, 2
+    36 0000000E F6E3                            mul BL ;BL*AL=AX
+    37 00000010 6683C00A                        add AX,10 ;AX=(b/a*2+10)
+    38                                          
+    39 00000014 66F725[01000000]                mul word [b] ; AX*b = DX:AX = (b/a*2+10)*b
+    40                                          ;DX:AX -> BX:CX
+    41 0000001B 6689D3                          mov BX,DX
+    42 0000001E 6689C1                          mov CX,AX
+    43                                          ;BX:CX = EBX
+    44 00000021 6653                            push BX
+    45 00000023 6651                            push CX
+    46 00000025 5B                              pop EBX
+    47                                             
+    48                                          
+    49                                          ;b*15
+    50 00000026 66B80F00                        mov AX,15
+    51 0000002A 66F725[01000000]                mul word [b] ; AX*b = 15*b = DX:AX
+    52 00000031 6652                            push DX
+    53 00000033 6650                            push AX
+    54 00000035 58                              pop EAX
+    55                                          
+    56                                          ;EBX=(b / a * 2 + 10) * b 
+    57                                          ;EAX =b*15
+    58                                          
+    59 00000036 29C3                            sub EBX,EAX ; EBX=EBX-EAX
+    60                                          
+    61                                          
+    62                                          
+    63                                          ; exit(0)
+    64 00000038 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    65 0000003A FF15[00000000]                  call    [exit]       ; call exit to terminate the program

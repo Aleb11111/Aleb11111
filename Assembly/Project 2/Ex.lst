@@ -1,0 +1,139 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      ; ...
+    14                                      
+    15                                  ; our code starts here
+    16                                  segment code use32 class=code
+    17                                      start:
+    18                                          ; ...
+    19                                          ;Ex 1 1+9
+    20                                          ;mov AH,1
+    21                                          ;mov AL,9
+    22                                          ;ADD AH,AL
+    23                                      
+    24                                          
+    25                                          ;Ex2 1+15
+    26                                          ;mov AH,1
+    27                                          ;mov AL,15
+    28                                          ;add AH,AL
+    29                                      
+    30                                          ;EX3 128+128
+    31                                          ;mov AX, 128
+    32                                          ;mov BX, 128
+    33                                          ;add AX,BX
+    34                                          
+    35                                          
+    36                                          ;Ex4 5-6
+    37                                          ;mov AH,5
+    38                                          ;mov AL,6
+    39                                          ;sub AH,AL
+    40                                          
+    41                                          
+    42                                          ;Ex5 10/4
+    43                                          ;mov AX,10
+    44                                          ;mov AL,6
+    45                                          ;div AX
+    46                                          
+    47                                          ;Ex6 256*1
+    48                                  		;mov AX,256
+    49                                  		;mov DX,1
+    50                                          ;mul DX
+    51                                          ;push DX
+    52                                          ;push AX
+    53                                          ;pop EAX
+    54                                  		
+    55                                  		;Ex7 256/1
+    56                                          ;mov AX,256
+    57                                  		;mov DX,1
+    58                                          ;div DX
+    59                                  		
+    60                                          ;Ex8 128+127
+    61                                          ;mov AL,128
+    62                                          ;mov BL,127
+    63                                          ;add AL,BL
+    64                                          
+    65                                          ;Ex9 3*4
+    66                                          ;mov AL,3
+    67                                          ;mov DL,4
+    68                                          ;mul DL
+    69                                             
+    70                                          ;Ex10 9=7
+    71                                          ;mov AL,9
+    72                                          ;add AL,7
+    73                                           
+    74                                          ;Ex11 128*2
+    75                                          ;mov Al,128
+    76                                          ;mov DL,2
+    77                                          ;mul DL
+    78                                  
+    79                                          ;Ex12 4-5
+    80                                          ;mov AL,4
+    81                                          ;sub AL,5
+    82                                  
+    83                                          ;Ex13 2+8
+    84                                          ;mov AL,2
+    85                                          ;add AL,8
+    86                                          
+    87                                          ;Ex14 -2*5
+    88                                          ;mov AL,-2
+    89                                          ;mov DL,5
+    90                                          ;mul DL
+    91                                          
+    92                                          ;Ex15 6*3
+    93                                          ;mov Al,6
+    94                                          ;mov DL,3
+    95                                          ;mul DL
+    96                                          
+    97                                          ;Ex16 4*4
+    98                                          ;mov AL,4
+    99                                          ;mov DL,4
+   100                                          ;mul DL
+   101                                          
+   102                                          ;Ex17 14+2
+   103                                          ;mov AL,14
+   104                                          ;add AL,2
+   105                                          
+   106                                          ;Ex18 127+129
+   107                                          ;mov AL,127
+   108                                          ;add AL,129
+   109                                          
+   110                                          ;Ex19 12/4
+   111                                          ;mov AX,12
+   112                                          ;mov DL,4
+   113                                          ;div DL
+   114                                          
+   115                                          ;Ex20 13/3
+   116                                          ;mov AX,13
+   117                                          ;mov DL,3
+   118                                          ;div DL
+   119                                          
+   120                                          ;Ex21 15/3
+   121                                          ;mov AX,15
+   122                                          ;mov DL,3
+   123                                          ;div DL
+   124                                          
+   125                                          ;Ex22 16/4
+   126 00000000 66B81000                        mov AX,16
+   127 00000004 B204                            mov DL,4
+   128 00000006 F6F2                            div DL
+   129                                          
+   130                                          
+   131                                          
+   132                                          
+   133                                          
+   134                                          
+   135                                          
+   136                                      
+   137                                          ; exit(0)
+   138 00000008 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   139 0000000A FF15[00000000]                  call    [exit]       ; call exit to terminate the program

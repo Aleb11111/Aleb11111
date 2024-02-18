@@ -1,0 +1,42 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  import fopen msvcrt.dll
+    13                                  import fread msvcrt.dll
+    14                                  import fclose msvcrt.dll
+    15                                  import printf msvcrt.dll
+    16                                  
+    17                                  segment data use32 class=data
+    18                                      ; ...
+    19 00000000 66696C652E74787400             file_name db "file.txt", 0
+    20 00000009 7200                           access_mode db "r", 0
+    21 0000000B FFFFFFFF                       file_descriptor dd -1
+    22 0000000F 00000000                       nr dd 0
+    23                                  ; our code starts here
+    24                                  segment code use32 class=code
+    25                                      start:
+    26                                          ; ...
+    27 00000000 FF35[0B000000]                  push dword [file_descriptor]
+    28 00000006 6A06                            push dword 6
+    29 00000008 6A01                            push dword 1
+    30 0000000A 68[0F000000]                    push dword nr        
+    31                                          call [fread]
+    31          ******************       error: symbol `fread' undefined
+    32 0000000F 83C410                          add esp, 4*4
+    33 00000012 50                              push dword eax
+    34                                          call [printf]
+    34          ******************       error: symbol `printf' undefined
+    35 00000013 83C404                          add esp, 4*1
+    36                                          
+    37                                          
+    38                                          ; exit(0)
+    39 00000016 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    40 00000018 FF15[00000000]                  call    [exit]       ; call exit to terminate the program
