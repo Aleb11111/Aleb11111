@@ -1,0 +1,3 @@
+/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/CMakeFiles/a23_Aleb1111.dir
+/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/CMakeFiles/rebuild_cache.dir

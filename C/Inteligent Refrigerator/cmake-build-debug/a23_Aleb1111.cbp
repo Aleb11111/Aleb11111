@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="a23_Aleb1111"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="a23_Aleb1111">
+				<Option output="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/a23_Aleb1111" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Domains"/>
+					<Add directory="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Repo"/>
+					<Add directory="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Services"/>
+					<Add directory="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/UI"/>
+					<Add directory="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Undo_Redo"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 a23_Aleb1111"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="a23_Aleb1111/fast">
+				<Option output="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/a23_Aleb1111" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Domains"/>
+					<Add directory="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Repo"/>
+					<Add directory="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Services"/>
+					<Add directory="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/UI"/>
+					<Add directory="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Undo_Redo"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 a23_Aleb1111/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/Ale/Desktop/a23-Aleb1111/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Domains/DynArr.c">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Domains/DynArr.h">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Domains/Product.c">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Domains/Product.h">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Repo/Repository.c">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Repo/Repository.h">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Services/Service.c">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Services/Service.h">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Tests/tests.c">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Tests/tests.h">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/UI/UI.c">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/UI/UI.h">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Undo_Redo/UndoRedo.c">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/Undo_Redo/Undo_Redo.h">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/main.c">
+			<Option target="a23_Aleb1111"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ale/Desktop/a23-Aleb1111/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
