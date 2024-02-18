@@ -1,5 +1,0 @@
-C:/Users/Ale/Desktop/facultate/sem. 2/Object Oriented Programming/Assigments/a89-Aleb1111/cmake-build-debug/CMakeFiles/untitled1.dir
-C:/Users/Ale/Desktop/facultate/sem. 2/Object Oriented Programming/Assigments/a89-Aleb1111/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Ale/Desktop/facultate/sem. 2/Object Oriented Programming/Assigments/a89-Aleb1111/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Ale/Desktop/facultate/sem. 2/Object Oriented Programming/Assigments/a89-Aleb1111/cmake-build-debug/CMakeFiles/untitled1_autogen_timestamp_deps.dir
-C:/Users/Ale/Desktop/facultate/sem. 2/Object Oriented Programming/Assigments/a89-Aleb1111/cmake-build-debug/CMakeFiles/untitled1_autogen.dir
