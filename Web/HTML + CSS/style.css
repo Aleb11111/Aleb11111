@@ -1,0 +1,411 @@
+.menu {
+    
+  overflow: hidden;
+  background-color: #202f36;
+  position: absolute;
+  width: 100%;
+  height: 6ch;
+  left: 0;
+  top: 0;
+}
+
+
+
+
+.topcolors{
+    width: 100%;
+    height: 3px;
+    list-style: none;
+    top:0;
+    left:0;
+    color: #13141700;
+    position: absolute;
+    
+}
+
+.menu a {
+
+    position: relative;
+    width: 163px;
+    left: 12%;
+    float: left;
+    display: block;
+    font-size: 15px;
+    font-family: Helvetica;
+    color: #8e8e8e;
+    background-color: #202f36;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border: #131417;
+    border-style: outset;
+    border-width: 0.5px;
+
+  }
+
+.main {
+
+    position: absolute;
+    width: 100%;
+    height: 78%;
+    top:6ch;
+    left:0;
+    background-color: #004669;
+  }
+
+.logo {
+
+    height: auto;
+    position: absolute;
+    width: 20%;
+    top: 3%;
+    left: 13%;
+}
+
+.donateButton{
+
+    position: relative;
+    left: 53.9%;
+    text-align: center;
+    top: 8.2%;
+    width: 5%;
+    height: 4.2ch;
+    border-radius: 6px;
+    border-style: outset;
+    border-color: #f4e453;
+    background-image: linear-gradient(to top, #dfc051 0%, #ffec98 100%);
+    color: #424242;
+    font-size: 14px;
+    
+}
+
+.searchBar{
+
+    background-color: #202f36;
+    position: absolute;
+    width: 28%;
+    height: 10.5%;
+    left: 59.3%;
+    top: 5.63%;
+    border-radius: 6px;
+    border: #131417;
+    border-style: outset;
+    border-width: 0.5px;
+    
+}
+
+.searchIcon{
+
+    width: 10%;
+    height: auto;
+    position: relative;
+    top: 7%;
+    left: 0.5%;
+}
+
+.searchBox{
+
+  background-color: white;
+  position: absolute;
+  top: 15%;
+  left: 12%;
+  height: 65%;
+  width: 52%;
+
+}
+
+.searchBox li{
+
+  list-style: none;
+  position: relative;
+  top: 28%;
+  left: 4%;
+  font-size: 16px;
+  font-family: Helvetica;
+  color: #cacaca;
+
+}
+
+.GOButton{
+
+  position: absolute;
+  top: 11%;
+  left: 66.6%;
+  width: 11%;
+  height: 70%;
+  text-align: center;
+  border-radius: 6px;
+  border-style: outset;
+  border-color: #3c7baf;
+  background-image: linear-gradient(to top, #32628a 0%, #458cc6 100%);
+  color: #cacaca;
+  font-size: 14px;;
+}
+
+.socialize{
+
+  background-color: #202f36;
+    position: relative;
+    width: 20%;
+    height: 96%;
+    left: 79.8%;
+    top: -77.8%;
+    text-align: center;
+    border-radius: 6px;
+    border: #131417;
+    border-style: outset;
+    border-width: 0.5px;
+
+}
+
+.socialize li{
+
+    position: relative;
+    top:35%;
+    font-size: 14px;
+    text-align: center;
+    font-family: Helvetica;
+    color:#cacaca;
+    list-style: none;
+  
+}
+
+.menu2{
+
+  text-align: center;
+  overflow: hidden;
+  background: #3776ab;
+  color: #fff;
+  text-shadow: none;
+  position: absolute;
+  width: 74.3%;
+  height: 6.5ch;
+  left: 13%;
+  top: 21%;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.menu2 a {
+
+  position: relative;
+  width: auto;
+  height: 100%;
+  left: 12%;
+  float: left;
+  vertical-align: baseline;
+  font-size: 13px;
+  font-family: Helvetica;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-width: 0.5px;
+
+}
+
+.content1{
+
+  background-color: #202f36;
+  position: relative;
+  top: 25%;
+  left: 18%;
+  width: 28%;
+  height: 43%;
+  line-height: 1.5;
+  overflow: auto;
+  padding: 1.25em 1.5em;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 11px 11px 44px 6px inset;
+}
+
+.content2{
+
+  background-color: #053954;
+  position: absolute;
+  top: 30.7%;
+  left: 49.1%;
+  width: 28%;
+  height: 43%;
+  line-height: 1.5;
+  overflow: auto;
+  padding: 1.25em 1.5em;
+  text-align: left;
+
+}
+
+
+.comment{
+
+  color: gray;
+  word-spacing: 3px;
+  font-size: 17px;
+  font-family: Helvetica;
+  position: absolute;
+  top: 4%;
+  left: -25%;
+
+}
+
+.code{
+
+  color: rgb(0, 204, 61);
+  word-spacing: 3px;
+  font-size: 17px;
+  font-family: Helvetica;
+  position: absolute;
+  left:-23%;
+
+}
+
+.result{
+
+  color: rgb(255, 255, 255);
+  word-spacing: 3px;
+  font-size: 16px;
+  font-family: Helvetica;
+  position: absolute;
+  left:-23%;
+  top:75%;
+
+}
+
+.header{
+
+  color: rgb(231, 212, 68);
+  font-weight: bold;
+  word-spacing: 3px;
+  font-size: 20px;
+  font-family: Helvetica;
+  position: absolute;
+  top: 0%;
+  left:9%;
+}
+
+.textIn{
+
+  color: rgb(255, 255, 255);
+  word-spacing: 3px;
+  font-size: 15px;
+  font-family: Helvetica;
+  position: absolute;
+  top: 15%;
+  left:9%;
+  line-height: 2;
+}
+
+.link{
+
+  color: rgb(231, 212, 68);
+  text-decoration-line: underline;
+  line-height: 2;
+}
+
+.idk{
+
+  position: absolute;
+  left: 44.5%;
+  text-align: center;
+  top: 35%;
+  width: 5.5ch;
+  height: 5.5ch;
+  border-radius: 6px;
+  border-style: outset;
+  border-color: #f4e453;
+  background-image: linear-gradient(to top, #dfc051 0%, #ffec98 100%);
+  color: #424242;
+  font-size: 14px;;
+
+
+}
+
+.numbers{
+
+  position: absolute;
+  left: 58.5%;
+  text-align: center;
+  top: 71.5%;
+  width: 4.5ch;
+  height: 3.9ch;
+  border-radius: 6px;
+  border-style: outset;
+  border-color: #01547d;
+  border-width: 1px;
+  background-image: linear-gradient(to top, #0e5d84 0%, #4287aa 100%);
+  color: #b8b8b8;
+  font-size: 14px;
+
+}
+
+.text2{
+
+  color: rgb(179, 179, 179);
+  text-align: center;
+  position: relative;
+  top: 25%;
+  font-size: 25px;
+  font-family: Helvetica;
+}
+
+.lower{
+
+  position: absolute;
+  top: 89%;
+  width: 99%;
+  height: fit-content;
+  font-size: 20px;
+  font-family: Helvetica;
+
+
+}
+
+.getStarted{
+
+  position: absolute;
+  left: 12%;
+  width: 17%;
+
+}
+
+.lowerLine{
+
+    width: 100%;
+    height: 4px;
+    list-style: none;
+    left:0;
+    background-color: rgb(92, 141, 174);
+    color: #b6b6b600;
+    position: absolute;
+
+}
+
+.download{
+
+  position: absolute;
+  left: 30.5%;
+  width: 17%;
+
+
+}
+
+.docs{
+
+  position: absolute;
+  left: 49%;
+  width: 17%;
+
+}
+
+.jobs{
+
+  position: absolute;
+  left: 67.5%;
+  width: 17%;
+
+}
